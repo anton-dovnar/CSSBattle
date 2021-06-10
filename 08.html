@@ -1,0 +1,70 @@
+<div id="container">
+  <div id="c">
+	<div id="row1">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+	</div>
+  </div>
+  <div id="row2"></div>
+  <div id="row3">
+    <div id="handle"></div>
+  </div>
+</div>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    background: #6592CF;
+  }
+  #container {
+    width: 140px;
+    height: 250px;
+  }
+  #row1 div, #handle {
+    width: 20px;
+  }
+  #row2, #row3 #handle {
+    background: #060F55;
+  }
+  #row1 {
+    display: flex;
+    height: 110px;
+  }
+  #c {
+    height: 120px;
+    background: #060F55;
+  }
+  #row1 div:nth-child(odd) {
+    box-shadow: 0px -10px 0px #6592CF;
+    border-radius: 20px 20px 0 0;
+    background: #060F55;
+  }
+  #row1 div:nth-child(even) {
+    border-radius: 0 0 20px 20px;
+    background: #6592CF;
+  }
+  #row2 {
+    height: 80px;
+    border-radius: 0 0 80px 80px;
+
+  }
+  #row3 {
+    height: 100%;
+    width: 100%;
+  }
+  #row3 #handle {
+    height: 100%;
+    margin: -10px auto 0 auto;
+  }
+</style>
