@@ -1,0 +1,63 @@
+<div id="container">
+  <div id="row1">
+    <div>
+      <div id="a"></div>
+    </div>
+    <div>
+      <div id="b"></div>
+    </div>
+    <div>
+      <div id="c"></div>
+    </div>
+  </div>
+  <div id="row2"></div>
+</div>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-end;
+    background: #62306D;
+  }
+  #container {
+    width: 300px;
+    height: 250px;
+    background: #F7EC7D;
+  }
+  #row1 {
+    display: flex;
+    height: 200px;
+    background: #62306D;
+  }
+  #row1 div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+  #row1 div:nth-child(even) {
+    align-items: flex-start;
+    background: #F7EC7D;
+    border-radius: 50px 50px 0 0;
+  }
+  #row1 div:nth-child(odd) {
+    align-items: flex-end;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 0 50px #F7EC7D;
+  }
+  #row1 #a, #row1 #b, #row1 #c{
+    height: 60px;
+    width: 100%;
+    border: 20px solid #AA445F;
+    border-radius: 50%;
+    background: #E38F66;
+  }
+  #row1 #b {
+    background: #AA445F;
+    border-color: #E38F66;
+  }
+</style>
