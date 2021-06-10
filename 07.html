@@ -1,0 +1,44 @@
+<div id="container">
+  <div id="a"></div>
+  <div id="b"></div>
+  <div id="c"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #0B2429;
+  }
+  #container {
+    position: relative;
+    width: 250px;
+  }
+  #container > div {
+    position: absolute;
+  }
+  #a, #b, #c {
+    border-radius: 67% 0;
+  }
+  div {
+    width: 150px;
+    height: 150px;
+  }
+  #a {
+    background: #1A4341;
+    
+  }
+  #b {
+   right: 50px;
+   background: #998235;
+  }
+  #c {
+    right: 0;
+    background: #F3AC3C;
+  }
+</style>
