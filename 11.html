@@ -1,0 +1,54 @@
+<div id="container">
+  <div id="a"></div>
+  <div id="eye">
+    <div id="pupil"></div>
+  </div>
+  <div id="b"></div>
+</div>
+<style>
+  *  {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    height: 100vh;
+    background: #191210;
+  }
+  body, #eye, #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #container {
+    position: relative;
+    width: 100%;
+  }
+  #eye {
+    width: 100px;
+    height: 100px;
+    border: 20px solid #ECA03D;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  #pupil {
+    width: 50px;
+    height: 50px;
+    background: #84271C;
+    border-radius: 50%;
+  }
+  #container #a, #container #b{
+    position: absolute;
+    left: 50px;
+    width: 60px;
+    height: 60px;
+    transform: rotate(45deg);
+    border: 20px solid #ECA03D;
+    border-color: #191210 #ECA03D #ECA03D #191210;
+    border-radius: 50%;
+  }
+  #container #b {
+    right: 50px;
+    left: auto;
+    transform: rotate(225deg);
+  }
+</style>
