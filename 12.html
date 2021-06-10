@@ -1,0 +1,67 @@
+<div id="container">
+  <div id="a"></div>
+  <div id="b"></div>
+  <div id="c"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    height: 100vh;
+    background: #F5D6B4;
+  }
+  body, #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #container > div {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: 20px solid #D86F45;
+    transform: rotate(45deg);
+    border-color: #F5D6B4 #D86F45 #D86F45 #F5D6B4;
+    border-radius: 50%;
+    margin: -10px;
+  }
+  #container #b {
+    transform: rotate(225deg);
+    z-index: 1;
+    border-top-color: rgba(0,0,0,0);
+    border-left-color: rgba(0,0,0,0);
+  }
+  #container #b:before, #container #b:after {
+    position: absolute;
+    left: -9px;
+    bottom: 0;
+    transform: rotate(-45deg);
+    content: "";
+    width: 20px;
+    height: 5px;
+    background: #D86F45;
+  }
+  #container #b:after {
+    left: 49px;
+    top: 0;
+  }
+  #container #a:before, #container #c:after {
+    position: absolute;
+    left: -10;
+    bottom: -4;
+    content: "";
+    transform: rotate(-45deg);
+    width: 20px;
+    height: 15px;
+    background: #D86F45;
+    border-radius: 20px 20px 0 0;
+  }
+  #container #c:after {
+    left: 48;
+    top: -8;
+    height: 20px;
+    border-radius: 20px 20px 20px 20px;
+  }
+</style>
