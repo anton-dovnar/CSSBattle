@@ -1,0 +1,41 @@
+<div id="container">
+  <div id="row1">
+    <div></div>
+  </div>
+  <div id="row2">
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<style>
+  body, #row1, #row2 {
+    display: flex;
+  }
+  #row1 > div, #row2 > div {
+    height: 100px;
+    width: 100px;
+    background: #F7EC7D;
+  }
+  body {
+    justify-content: center;
+    padding-top: 42px;
+    height: 100vh;
+    background: #62306D;
+  }
+  #container {
+    width: 300px;
+    height: 200px;
+  }
+  #row1 {
+    justify-content: space-around;
+  }
+  #row1 > div {
+    border-radius: 50% 50% 0 0;
+  }
+  #row2 {
+    justify-content: space-between;
+  }
+  #row2 > div {
+    border-radius: 0 0 50% 50%;
+  }
+</style>
