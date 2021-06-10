@@ -1,0 +1,42 @@
+<div id="container">
+  <div id="a"></div>
+  <div id="b"></div>
+  <div id="c"></div>
+  <div id="d"></div>
+</div>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #E3516E;
+  }
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  #container > div {
+    height: 100px;
+    width: 100px;
+  }
+  #a {
+    background: #51B5A9;
+    border-radius: 100% 0 0 0;
+  }
+  #b {
+    background: #FADE8B;
+    border-radius: 0 100% 0 0;
+  }
+  #c {
+    background: #F7F3D7;
+    border-radius: 0 0 0 100%;
+  }
+</style>
