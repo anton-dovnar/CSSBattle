@@ -1,0 +1,42 @@
+
+<div id="container">
+  <div></div>
+  <div>
+    <div id="overlap"></div>
+  </div>
+</div>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #09042A;
+  }
+  #container {
+    position: relative;
+    display: flex;
+    height: 150px;
+    width: 250px;
+  }
+  #container div {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  #container > div:nth-child(1) {
+    left: 0;
+    background: #7B3F61;
+  }
+  #container > div:nth-child(2) {
+    right: 0;
+    background: #E78481;
+    overflow: hidden;
+  }
+  #overlap {
+    left: -100px;
+    background: #09042A;
+  }
+</style>
