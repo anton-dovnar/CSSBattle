@@ -1,0 +1,79 @@
+<div id="container">
+  <div id="long-rectangle">
+    <div class="big-cut"></div>
+    <div class="big-cut"></div>
+  </div>
+  <div id="short-rectangle">
+    <div class="big-cut"></div>
+    <div class="big-cut"></div>
+  </div>
+</div>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #62306D;
+  }
+  #container {
+    display: flex;
+    position: relative;
+    width: 200px;
+    height: 100px;
+  }
+  #long-rectangle, #short-rectangle {
+    position: relative;
+  }
+  #long-rectangle {
+    width: 140px;
+    height: 100%;
+    background: #F7EC7D;
+  }
+  #long-rectangle:before, #long-rectangle:after {
+    position: absolute;
+    content: " ";
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background: #62306D;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  #long-rectangle:after {
+    top: auto;
+    bottom: -10px;
+  }
+  #short-rectangle {
+    width: 60px;
+    height: 100%; 
+    background: #E38F66;
+  }
+  .big-cut {
+    position: absolute;    
+    width: 40px;
+    height: 35px;
+    border-radius: 50%;
+    background: #62306D;
+  }
+  #long-rectangle .big-cut:nth-child(1) {
+    top: -16px;
+    left: -20px;
+  }
+  #long-rectangle .big-cut:nth-child(2) {
+    left: -20px;
+    bottom: -16px;
+  }
+  #short-rectangle .big-cut:nth-child(1) {
+    top: -16px;
+    right: -20px;
+  }
+  #short-rectangle .big-cut:nth-child(2) {
+    right: -20px;
+    bottom: -16px;
+  }
+  
+  
+</style>
