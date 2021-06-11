@@ -1,0 +1,45 @@
+<div id="triangle-down">
+  <div></div>
+</div>
+<div id="triangle-up">
+  <div></div>
+</div>
+<style>
+  body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #F2F2B6;
+  }
+  div {
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+  }
+  #triangle-down, #triangle-up {
+      position: absolute;
+  }
+  #triangle-down {
+    left: 80px;
+    border-top: 130px solid #FD4602;
+  }
+  #triangle-down > div {
+    position: absolute;
+    left: -95px;
+    bottom: 0;
+    border-top: 130px solid #FF6D00;
+  }
+  #triangle-up {
+    right: 60;
+    border-bottom: 130px solid #FF6D00;
+  }
+  #triangle-up > div {
+    position: absolute;
+    right: -55px;
+    border-bottom: 130px solid #FD4602;
+  }
+</style>
