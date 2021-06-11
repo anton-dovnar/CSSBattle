@@ -1,0 +1,48 @@
+<div id="container">
+  <div id="front-edge"></div>
+  <div id="left-edge"></div>
+  <div id="top-edge"></div>
+</div>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #0B2429;
+  }
+  #container {
+    position: relative;
+    width: 150px;
+    height: 215px;
+
+  }
+  #front-edge {
+    position: absolute;
+    left: 25;
+    bottom: 23;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    background: #F3AC3C;
+  }
+  #top-edge {
+    position: absolute;
+    right: 4;
+    top: 36;
+    width: 71px;
+    height: 70px;
+    transform: skewY(45deg);
+    background: #1A4341;
+  }
+  #left-edge {
+    position: absolute;
+    left: 4;
+    top: 36;
+    width: 72px;
+    height: 71px;
+    transform: skewY(-45deg);
+    background: #998235;
+  }
+</style>
