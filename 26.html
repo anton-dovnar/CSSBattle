@@ -1,0 +1,45 @@
+<div id="container">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #6592CF;
+  }
+  #container {
+    position: relative;
+    width: 320px;
+    height: 220px;
+  }
+  #container div {
+    width: 120px;
+    height: 120px;
+    border: 20px solid #060F55;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+  }
+  #container div:nth-child(3) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  #container div:nth-child(2) {
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+    transform: rotate(135deg);
+  }
+ 
+</style>
