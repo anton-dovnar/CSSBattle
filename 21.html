@@ -1,0 +1,58 @@
+<div id="container">
+  <div id="orange">
+  	<div></div>
+  	<div></div>
+  </div>
+  <div id="blue">
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+  }
+  #container, #blue, #orange {
+    position: relative;
+    width: 150px;
+    height: 180px;
+  }
+  #orange div:nth-child(1), #blue div:nth-child(1) {    
+    position: absolute;
+    top: 33;
+    left: -5px;
+    width: 100px;
+    height: 30px;
+    border-top-left-radius: 10px;
+    background: #F2994A;
+    transform: rotate(-45deg)
+  }
+  #orange div:nth-child(2), #blue div:nth-child(2) {
+    position: absolute;
+    bottom: 68px;
+    left: 15px;
+    width: 60px;
+    height: 30px;
+    border-top-right-radius: 5px;
+    background: #F2994A;
+    transform: rotate(45deg)
+  }
+  #container #blue div {
+    background: #2D9CDB;
+  }
+  #container #blue {
+    position: absolute;
+    top: -1;
+    right: 2;
+   	transform: rotate(180deg);
+  }
+</style>
