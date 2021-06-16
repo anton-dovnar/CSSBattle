@@ -1,0 +1,52 @@
+<div id="container">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    height: 100vh;
+    background: #293462;
+  }
+  #container {
+    width: 300px;
+    height: 100%;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 200px 100px;
+	grid-template-rows: 200px auto;
+  }
+  #container div {
+    height: 100%;
+    width: 100%;
+    background: #FE5F55;
+  }
+  #container div:nth-child(1) {
+    background: #FFF1C1;
+  }
+  #container div:nth-child(2):after {
+    position: absolute;
+    bottom: 100px;
+    content: " ";
+    width: 100px;
+    height: 50px;
+    background: #A64942;
+  }
+  #container div:nth-child(3):after {
+    position: absolute;
+    content: " ";
+    left: 150px;
+    width: 50px;
+    height: 100%;
+    background: #A64942;
+  }
+  #container div:nth-child(4) {
+    background: #293462;
+  }
+</style>
