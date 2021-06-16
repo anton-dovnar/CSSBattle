@@ -1,0 +1,47 @@
+<div id="container">
+  <div></div>
+  <div></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #AA445F;
+  }
+  #container {
+    position: relative;
+    width: 250px;
+    height: 200px;
+  }
+  #container div {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+  }
+  #container div:nth-child(1) {
+    top: 0;
+    left: 0;
+    border-top: 100px solid #F7EC7D;
+    border-right: 100px solid #F7EC7D;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    transform: rotate(-135deg);
+  }
+  #container div:nth-child(2) {
+    top: 0;
+    right: 0;
+    border-top: 100px solid #E38F66;
+    border-right: 100px solid #E38F66;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid transparent;
+    transform: rotate(45deg);
+  }
+</style>
