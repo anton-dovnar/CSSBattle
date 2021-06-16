@@ -1,0 +1,38 @@
+<div id="container">
+  <div>
+    <div></div>
+  </div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    height: 100vh;
+    background: #6592CF;
+  }
+  body, #container, #container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #container {
+    width: 250px;
+    height: 250px;
+    background: #243D83;
+  }
+  #container > div {
+    width: 150px;
+    height: 150px;
+    background: #6592CF;
+    transform: rotate(15deg);
+  }
+  #container > div > div {
+    width: 75px;
+    height: 75px;
+    background: #243D83;
+    transform: rotate(15deg);
+  }
+</style>
