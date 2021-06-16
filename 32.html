@@ -1,0 +1,46 @@
+<div id="container">
+  <div></div>
+  <div></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  #container {
+    position: relative;
+    width: 180px;
+    height: 180px;
+  }
+  #container div {
+    position: absolute;
+    top: -10px;
+    width: 50px;
+    height: 200px;
+  }
+  #container div:nth-child(1) {
+    left: 65px;
+    transform: rotate(45deg);
+    background: #A3A368;
+  }
+  #container div:nth-child(2) {
+    right: 65px;
+    transform: rotate(-45deg);
+    background: #F3AC3C;
+  }
+  #container div:nth-child(2):after {
+    position: absolute;
+    content: " ";
+    top: 75px;
+    width: 50px;
+    height: 50px;
+    background: #FBE18C;
+  }
+</style>
