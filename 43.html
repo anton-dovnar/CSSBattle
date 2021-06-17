@@ -1,0 +1,37 @@
+<div id="container">
+  <div class="left bracket"></div>
+  <div class="right bracket"></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #6592CF;
+  }
+  #container {
+    position: relative;
+    width: 110px;
+    height: 240px;
+    overflow: hidden;
+  }
+  .bracket {
+    position: absolute;
+    width: 150px;
+    height: 240px;
+    border: 30px solid #243D83;
+    border-radius: 70px;
+  }
+  .left {
+    left: 40px;
+  }
+  .right {
+    right: 40px;
+  }
+</style>
