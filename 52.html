@@ -1,0 +1,106 @@
+<div id="container">
+  <div class="block">
+    <div class="element">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="element">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="element">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div class="block">
+    <div class="element">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="element">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="element">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="element">
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</div>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #6592CF; 
+  }
+  #container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    height: 80px;
+    padding: 0 12px;
+  }
+  .block {
+    display: flex;
+    justify-content: space-between;
+    height: 60px; 
+  }
+  .block:nth-child(1) {
+    width: 110px;
+  }
+  .block:nth-child(1) .element:nth-child(1):before, .block:nth-child(1) .element:nth-child(3):before {
+    position: absolute;
+    content: " ";
+    top: -10px;
+    left: -10px;
+    width: 40px;
+    height: 40px;
+    background: #EEB850;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  .block:nth-child(1) .element:nth-child(2):before {
+    position: absolute;
+    content: " ";
+    top: -30px;
+    left: -20px;
+    width: 60px;
+    height: 60px;
+    background: #EEB850;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  .block:nth-child(2) {
+    width: 155px;
+  }
+  .element {
+    position: relative;
+    height: 100%;
+  }
+  .element div:nth-child(1) {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #243D83;
+  }
+  .element div:nth-child(2) {
+    height: 50px;
+    width: 10px;
+    margin: auto;
+    margin-top: -10px;
+    background: #243D83;
+  }
+</style>
