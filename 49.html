@@ -1,0 +1,55 @@
+<div id="container">
+  <div id="roof"></div>
+  <div id="walls"></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #6592CF;
+  }
+  #container {
+    width: 200px;
+    height: 200px;
+  }
+  #roof {
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid #243D83;
+  }
+  #walls {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    margin: auto;
+    background: #243D83;
+    border-radius: 0 0 10px 10px;
+  }
+  #walls:before {
+    position: absolute;
+    content: " ";
+    left: 50;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    background: #EEB850;
+    border-radius: 10px 10px 0 0;
+  }
+  #walls:after {
+    position: absolute;
+    content: " ";
+    top: -5px;
+    left: 25px;
+    width: 100px;
+    height: 10px;
+    background: #EEB850;
+    border-radius: 20px;
+  }
+</style>
