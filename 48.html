@@ -1,0 +1,40 @@
+<div id="container">
+  <div></div>
+</div>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #293462;
+  }
+  #container {
+    width: 200px;
+    height: 120px;
+    background: #A64942;
+    border-radius: 20px;
+  }
+  #container div {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #FE5F55;
+    border-radius: 20px;
+  }
+  #container div:before {
+    position: absolute;
+    content: " ";
+    top: 30px;
+    left: 30px;
+    height: 40px;
+    width: 140px;
+    background: #A64942;
+    border-radius: 20px;
+  }
+</style>
