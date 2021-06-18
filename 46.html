@@ -1,0 +1,41 @@
+<div></div>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #293462;
+  }
+  div {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #FFF1C1;
+    overflow: hidden;
+  }
+  div:before, div:after {
+    position: absolute;
+    content: " ";
+    background: #FE5F55;
+    transform: rotate(45deg);
+  }
+  div:before {
+    right: -41px;
+    bottom: -100px;
+    height: 200px;
+    width: 200px;
+  }
+  div:after {
+    left: 5px;
+    bottom: 11px;
+    height: 50px;
+    width: 50px;
+  }
+</style>
