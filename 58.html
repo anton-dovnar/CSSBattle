@@ -1,0 +1,77 @@
+<div id="container">
+  <div id="circle"></div>
+  <div id="layer-1"></div>
+  <div id="layer-2"></div>
+  <div id="layer-3"></div>
+  <div id="layer-4"></div>
+  <div id="layer-5"></div>
+<style>
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #191919;
+  }
+  #container {
+    width: 140px;
+    height: 230px;
+  }
+  #container div {
+    position: relative;
+  }
+  #circle {
+    width: 50px;
+    height: 50px;
+    background: #4F77FF;
+    border: 10px solid #191919;
+    border-radius: 50%;
+    margin: auto;
+  }
+  #layer-1, #layer-2 {
+    top: -20px;
+    width: 100px;
+    height: 30px;
+    outline: 10px solid #191919;
+    border-radius: 10px 10px 50px 50px;
+    margin: auto;
+    background: #4F77FF;
+    z-index: -1;
+  }
+  #layer-2 {
+    top: -30px;
+    width: auto;
+    z-index: -2;
+  }
+  #layer-3 {
+    top: -80;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    background: #4F77FF;
+    z-index: -3;
+  }
+  #layer-4 {
+    top: -100;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: auto;
+    background: #F9E492;
+    z-index: -4;
+  }
+  #layer-5 {
+    top: -110;
+    height: 80px;
+    width: 20px;
+    margin: auto;
+    border-radius: 50px;
+    background: #F9E492;
+  }
+</style>
