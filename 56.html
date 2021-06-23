@@ -1,0 +1,76 @@
+<div id="container">
+  <div id="top">
+    <div></div>
+    <div></div>
+  </div>
+  <div id="bottom">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #191919;
+  }
+  #container {
+    position: relative;
+    width: 120px;
+    height: 130px;
+  }
+  #top {
+    height: 100px;
+    border-radius: 100px 100px 16px 16px;
+    background: #4F77FF
+  }
+  #top div {
+    position: relative;
+    display: inline-block;
+    top: 53px;
+    left: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #191919;
+  }
+  #top div:nth-child(2) {
+    left: 20px;
+  }
+  #bottom {
+    position: relative;
+    width: 80px;
+    height: 30px;
+    margin: auto;
+    border-radius: 0 0 20px 20px;
+    background: #4F77FF;
+  }
+  #bottom:before {
+    position: absolute;
+    content: " ";
+    top: -9px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #191919;
+  }
+  #bottom div {
+    position: relative;
+    display: inline-block;
+    top: 20px;
+    left: 20px;
+    width: 10px;
+    height: 20px;
+    border-radius: 50px;
+    background: #191919;
+  }
+</style>
