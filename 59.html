@@ -1,0 +1,51 @@
+<div id="container">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+<style>
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #191919;
+  }
+  #container {
+    display: grid;
+    grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto auto;
+    grid-row-gap: 10px;
+	grid-column-gap: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  #container:before, #container:after {
+    position: absolute;
+    content: " ";
+    top: 52px;
+    left: 70px;
+    width: 155px;
+    height: 176px;
+    border: 10px solid #191919;
+    border-radius: 50%;
+  }
+  #container:after {
+    left: auto;
+    right: 70;
+  }
+  #container div {
+    background: #4F77FF;
+  }
+</style>
