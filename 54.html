@@ -1,0 +1,76 @@
+<div id="container">
+  <div id="fingers">
+    <div id="pointer"></div>
+    <div id="middle"></div>
+    <div id="ring"></div>
+    <div id="little"></div>
+  </div>
+  <div id="palm"></div>
+  <div id="wrist"></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #F9E492;
+  }
+  #container {
+    width: 100px;
+    height: 150px;
+  }
+  #fingers {
+    height: 63px;
+  }
+  #fingers div {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    border-radius: 50px;
+    background: #191919;
+  }
+  #pointer, #ring, #little {
+    top: 8px;
+    left: 5px;
+    height: 45px;
+  }
+  #middle {
+    top: 3px;
+    left: 5px;
+    height: 50px;
+  }
+  #little {
+    height: 35px;
+  }
+  #palm {
+    position: relative;
+    height: 40px;
+    background: #191919;
+    border-radius: 0 0 10px 10px;
+  }
+  #palm:before {
+    position: absolute;
+    top: -33px;
+    left: 2px;
+    content: " ";
+    width: 20px;
+    height: 65px;
+    border: 5px solid #F9E492;
+    border-radius: 50px;
+    transform: rotate(60deg);
+    background: #191919;
+  }
+  #wrist {
+    height: 45px;
+    width: 50px;
+    margin: auto;
+    border-radius: 0 0 10px 10px;
+    background: #191919;
+  }
+</style>
