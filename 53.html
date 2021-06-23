@@ -1,0 +1,45 @@
+<div id="container">
+  <div id="circle"><div></div></div>
+  <div id="outside"></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #19191A;
+  }
+  #container {
+    position: relative;
+    width: 150px;
+    height: 200px;
+  }
+  #circle {
+    width: 150px;
+    height: 150px;
+    background: #4F77FF;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  #circle > div {
+    position: relative;
+    top: 75;
+    width: 75px;
+    height: 125px;
+    background: #9AD5FF;
+  }
+  #outside {
+    position: relative;
+    width: 75px;
+    height: 125px;
+    bottom: 75px;
+    background: #F9E492;
+    z-index: -1;
+  }
+</style>
