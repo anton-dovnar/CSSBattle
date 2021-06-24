@@ -1,0 +1,50 @@
+<div id="container">
+  <div></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #191919;
+  }
+  #container {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    border-radius: 100px 100px 25px 25px;
+    background: #F2AD43;
+    overflow: hidden;
+  }
+  #container div {
+    position: relative;
+    top: 90;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #FFF58F;
+    margin: auto;
+  }
+  #container:before, #container:after {
+    position: absolute;
+    content: " ";
+    left: -100;
+    bottom: -100;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #E08027;
+    z-index: 1;
+  }
+  #container:after {
+    left: auto;
+    right: -100;
+    background: #824B20;
+  }
+</style>
