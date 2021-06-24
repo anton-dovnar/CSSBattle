@@ -1,0 +1,60 @@
+<div id="container">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #191919;
+  }
+  #container {
+    position: relative;
+    width: 192px;
+    height: 192px;
+  }
+  #container div {
+    position: relative;
+    height: 70px;
+    border-left: 10px solid #5DBCF9;
+    border-right: 10px solid #5DBCF9;
+    border-bottom: 10px solid #5DBCF9;
+    border-radius: 50px;
+  }
+  #container div:nth-child(2) {
+    top: -10;
+    left: -59;
+    transform: rotate(-90deg);
+  }
+  #container div:nth-child(3) {
+    top: -80;
+    left: 61;
+    transform: rotate(90deg);
+  }
+  #container div:nth-child(4) {
+    top: -90;
+    transform: rotate(180deg);
+  }
+  #container div:nth-child(1):before, #container div:nth-child(2):before, #container div:nth-child(3):before, #container div:nth-child(4):before {
+    position: absolute;
+    content: " ";
+    width: 51px;
+    height: 51px;
+    right: -10;
+    top: -1;
+    border-top: 10px solid #5DBCF9;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #5DBCF9;
+    border-bottom: 10px solid transparent;
+    border-radius: 50%;
+  }
+</style>
