@@ -1,0 +1,71 @@
+<div id="container">
+  <div></div>
+  <div></div>
+  <div id="wave-box">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #191919;
+  }
+  #container { 
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+  }
+  #container > div:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px 0 0 10px;
+    background: #5DBCF9;
+  }
+  #container > div:nth-child(2) {
+    border-right: 75px solid #5DBCF9;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
+    height: 200px;
+  }
+  #wave-box {
+    position: relative;
+    width: 100px;
+    height: 100%;
+    margin-left: 25px;
+    overflow: hidden;
+  }
+  #wave-box div {
+    position: relative;
+    left: -50;
+    border: 10px solid #5DBCF9;
+    border-radius: 50%;
+  }
+  #wave-box div:nth-child(1) {
+    top: 50px;
+    width: 100px;
+    height: 100px;
+  }
+  #wave-box div:nth-child(2) {
+    left: -75;
+    top: -75px;
+    width: 150px;
+    height: 150px;
+  }
+  #wave-box div:nth-child(3) {
+    top: -250px;
+    left: -100px;
+    width: 200px;
+    height: 200px;
+  }
+</style>
