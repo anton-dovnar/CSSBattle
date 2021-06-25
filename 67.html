@@ -1,0 +1,59 @@
+<div id="container">
+  <div class="column">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="column">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="column">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="column">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+ </div>
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #5DBCF9;
+  }
+  #container {
+    position: relative;
+    display: flex;
+  }
+  .column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+  }
+  .column div {
+    width: 140px;
+    height: 110px;
+    margin-bottom: 40px;
+    background: #191919;
+  }
+  .column:nth-child(odd) {
+    top: 45px;
+  }
+  .column:nth-child(even) {
+    top: -5;
+  }
+</style>
