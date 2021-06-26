@@ -1,0 +1,112 @@
+<div id="container">
+  <div id="inner-container">
+    <div id="face">
+      <div class="eye"></div>
+      <div class="eye"></div>
+    </div>
+  </div>
+  <div class="odd"></div>
+  <div class="odd"></div>
+  <div class="odd"></div>
+  <div class="odd"></div>
+  <div class="even"></div>
+  <div class="even"></div>
+  <div class="even"></div>
+  <div class="even"></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #243D83;
+  }
+  #container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 170px;
+    background: #243D83;
+  }
+  #inner-container {
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: 110px;
+    border-radius: 50%;
+    background: #6592CF;
+  }
+  #face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 80px;
+    border-radius: 50px;
+    background: #243D83;
+  }
+  .eye {
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #6592CF;
+  }
+  .odd {
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    background: #6592CF;
+  }
+  .odd:nth-child(2), .odd:nth-child(4) {
+    top: 60px;
+    right: -5px;
+    transform: rotate(90deg);
+  }
+  .odd:nth-child(3) {
+    top: auto;
+    bottom: 0;
+  }
+  .odd:nth-child(4) {
+    right: auto;
+    left: -5;
+  }
+  .even {
+    position: absolute;
+    top: 20;
+    left: 15;
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    background: #6592CF;
+    transform: rotate(-45deg);
+  }
+  .even:nth-child(6) {
+    left: auto;
+    right: 15;
+
+    transform: rotate(45deg);
+  }
+  .even:nth-child(7) {
+    top: auto;
+    bottom: 20;
+    transform: rotate(45deg);
+  }
+  .even:nth-child(8) {
+    top: auto;
+    left: auto;
+    right: 15;
+    bottom: 20;
+    transform: rotate(-45deg);
+  }
+</style>
