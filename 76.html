@@ -1,0 +1,87 @@
+<div id="container">
+  <div class="back">
+    <div class="wing"></div>
+    <div class="wing"></div>
+  </div>
+  <div class="bee">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="eye"></div>
+  </div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #998235;
+  }
+  #container {
+    width: 150px;
+    height: 150px;
+  }
+  .back {
+    position: relative;
+    height: 75px;
+    border: 15px solid #fff;
+    border-top: none;
+    border-radius: 50px;
+  }
+  .back:before {
+    position: absolute;
+    content: " ";
+    top: 30;
+    left: 40;
+    width: 0;
+    height: 0;
+    border-bottom: 35px solid #fff;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    z-index: 1;
+  }
+  .wing {
+    position: relative;
+    left: -10;
+    width: 71px;
+    height: 70px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  .wing:last-child {
+    left: auto;
+    top: -70;
+    left: 60;
+  }
+  .bee {
+    position: relative;
+    height: 75px;
+    border-radius: 50px;
+    background: #EFF33C;
+    overflow: hidden;
+  }
+  .line {
+    position: relative;
+    float: left;
+    left: -5;
+    width: 25px;
+    height: 100%;
+    background: #191919;
+    margin: 0 5px;
+  }
+  .eye {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #191919;
+  }
+</style>
