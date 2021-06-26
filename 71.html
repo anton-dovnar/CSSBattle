@@ -1,0 +1,106 @@
+<div id="container">
+  <div class="ear">
+    <div></div>
+  </div>
+  <div class="head">
+    <div class="eye"></div>
+    <div class="eye"></div>
+  </div>
+  <div class="ear">
+    <div></div>
+  </div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #998235;
+  }
+  #container {
+    position: relative;
+    width: 300px;
+    height: 180px;
+  }
+  .ear {
+    position: absolute;
+    width: 80px;
+    height: 180px;
+    border-radius: 50%;
+    background: #1A4341;
+    overflow: hidden;
+  }
+  .ear > div {
+    position: relative;
+    left: 15;
+  	width: 80px;
+    border-radius: 50%;
+    height: 180px;
+    background: #0B2429;
+  }
+  .ear:last-child {
+    right: 0;
+    transform: scale(-1, -1);
+  }
+  .head {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 180px;
+    left: 60px;
+    border-radius: 50%;
+    background: #1A4341;
+    z-index: 1;
+  }
+  .eye {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 10px solid #998235;
+    border-radius: 50%;
+    background: #0B2429;
+    margin: 0 10px;
+  }
+  .eye:before {
+    position: absolute;
+    top: -10px;
+    left: -25px;
+    content: " ";
+    width: 70px;
+    height: 20px;
+    background: #1A4341;
+  }
+  #container:before {
+    position: absolute;
+    content: " ";
+    left: 90px;
+    bottom: -70px;
+    width: 80px;
+    height: 80px;
+    border: 20px solid #fff;
+    border-left: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    z-index: 2;
+  }
+  #container:after {
+    position: absolute;
+    content: " ";
+    left: 130px;
+    bottom: -60px;
+    width: 40px;
+    height: 120px;
+    border-radius: 50px 50px 0 0;
+    background: #0B2429;
+    z-index: 3;
+  }
+</style>
