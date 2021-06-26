@@ -1,0 +1,74 @@
+<div id="container">
+  <div class="outer-ring">
+    <div class="inner-ring"></div>
+  </div>
+  <div class="outer-ring">
+    <div class="inner-ring"></div>
+  </div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #191919;
+  }
+  #container {
+    width: 222px;
+    height: 145px;
+  }
+  .outer-ring {
+    position: relative;
+    width: 113px;
+    height: 113px;
+    border: 12px solid #E08027;
+    border-radius: 50%;
+  }
+  .outer-ring:first-child:before, .outer-ring:last-child:before {
+    position: absolute;
+    content: " ";
+    top: -12px;
+    left: -12px;
+    border-top: 25px solid #E08027;
+    border-left: 25px solid #E08027;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+  }
+  .outer-ring:first-child:after {
+    position: absolute;
+    content: " ";
+    top: 75;
+    left: 75;
+    width: 40px;
+    height: 50px;
+    transform: rotate(-45deg);
+    background: #E08027;
+  }
+  .outer-ring:last-child:before {
+    transform: rotate(90deg);
+    left: 47;
+  }
+  .outer-ring:last-child {
+    top: -112;
+    left: 108;
+    outline: 10px solid #191919;
+  }
+  .inner-ring {
+    position: relative;
+    top: 35px;
+    left: 30px;
+    width: 30px;
+    height: 30px;
+    border: 10px solid #E08027;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+  }
+</style>
