@@ -1,0 +1,87 @@
+<div id="container">
+  <div id="face">
+    <div class="eye"></div>
+    <div class="eye"></div>
+  </div>
+  <div id="nose"></div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #191919;
+  }
+  #container {
+    width: 150px;
+    height: 150px;
+  }
+  #face {
+    position: relative;
+    height: 150px;
+    width: 130px;
+    border-radius: 60px;
+    background: #FE5F55;
+    margin: auto;
+  }
+  #face:before, #face:after {
+    position: absolute;
+   	content: " ";
+    top: -5px;
+    left: 15px;
+    width: 10px;
+    height: 20px;
+    background: #000;
+    border: 5px solid #FE5F55;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    z-index: -1;
+  }
+  #face:after {
+    left: auto;
+    right: 15px;
+    transform: rotate(45deg);
+  }
+  .eye {
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #000;
+  }
+  .eye:last-child {
+    left: auto;
+    right: 25;
+  }
+  #nose {
+    position: relative;
+    top: -80;
+    height: 100px;
+    border-radius: 60px 60px 50px 50px;
+    background: #A64942;
+  }
+  #nose:before, #nose:after {
+    position: absolute;
+    content: " ";
+    top: 20px;
+    left: 25px;
+    width: 20px;
+    height: 30px;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    background: #000;
+  }
+  #nose:after {
+    left: auto;
+    right: 25px;
+    transform: rotate(-45deg);
+  }
+</style>
